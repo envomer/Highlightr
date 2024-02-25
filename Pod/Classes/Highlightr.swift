@@ -103,6 +103,21 @@ open class Highlightr
         
         return true
     }
+
+    /**
+     Set the theme to use for highlighting.
+     
+     - parameter to: Theme name
+     
+     - returns: true if it was possible to set the given theme, false otherwise
+     */
+    @discardableResult
+    open func setTheme(to theme: Theme) -> Bool
+    {
+        self.theme = theme
+        
+        return true
+    }
     
     /**
      Takes a String and returns a NSAttributedString with the given language highlighted.
